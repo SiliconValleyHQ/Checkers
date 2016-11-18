@@ -11,15 +11,17 @@ public class SpillerBehandler extends Thread {
 
     private Socket socket;
 
-    public SpillerBehandler(Socket s) { socket = s; }
+    public SpillerBehandler(Socket isocket) {
+        socket = isocket;
+    }
 
     public void kjor() throws IOException {
         try {
             PrintStream output = new PrintStream(socket.getOutputStream());
-            output.println("melding mottatt");
+            output.println("<h3>melding mottatt</h3>");
             output.close();
         } catch (Exception e) {
-            System.err.print("");
+            System.err.print("Melding ikke motatt");
         }
     }
 }
