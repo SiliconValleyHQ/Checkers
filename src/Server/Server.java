@@ -9,12 +9,10 @@ import java.net.*;
 
 public class Server {
 
-    private ServerSocket server;
-
     public Server(String[] args) throws IOException{
         ServerSocket serverSocket = null;
         try {
-            int port = 28701;
+            int port = 28702;
             serverSocket = new ServerSocket(port);
             Socket socket;
             System.out.println("Venter på spillere på port " + port + "...");
