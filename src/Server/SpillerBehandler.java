@@ -1,6 +1,5 @@
-package Server;
+package server;
 
-import java.io.IOException;
 import java.io.PrintStream;
 import java.net.Socket;
 
@@ -11,15 +10,17 @@ public class SpillerBehandler extends Thread {
 
     private Socket socket;
 
-    public SpillerBehandler(Socket s) { socket = s; }
+    public SpillerBehandler(Socket isocket) {
+        socket = isocket;
+    }
 
-    public void kjor() throws IOException {
+    public void run() {
         try {
             PrintStream output = new PrintStream(socket.getOutputStream());
-            output.println("melding mottatt");
-            output.close();
+            output.println("itzzz workzzz");
         } catch (Exception e) {
-            System.err.print("");
+            System.err.print("Melding ikke motatt");
         }
     }
+
 }

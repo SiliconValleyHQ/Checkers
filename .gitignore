@@ -1,2 +1,15 @@
 
 .DS_Store
+
+.project
+
+*.iml
+
+checkers.iml
+
+*.iml
+
+.idea/workspace.xml
+
+.metadata/
+
