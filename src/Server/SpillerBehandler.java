@@ -6,6 +6,7 @@ import java.net.Socket;
 /**
  * Created by Bror on 18.11.2016.
  */
+
 public class SpillerBehandler extends Thread {
 
     private Socket socket;
