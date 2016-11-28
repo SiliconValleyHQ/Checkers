@@ -31,7 +31,7 @@ package testing;
  *                             VICTORY
  *                             DEFEAT
  *                             TIE
- *                             MESSAGE <text>
+ *                             MESSAGE <tekst>
  *
  */
 public class TicTacToeClient {
