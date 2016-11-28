@@ -10,3 +10,6 @@ checkers.iml
 *.iml
 
 .idea/workspace.xml
+
+.metadata/
+
