@@ -1,4 +1,4 @@
-package Server;
+package server;
 
 import java.io.*;
 import java.net.*;
@@ -9,10 +9,10 @@ import java.net.*;
 
 public class Server {
 
-    public Server(String[] args) throws IOException{
+    public Server() throws IOException{
         ServerSocket serverSocket = null;
+        int port = 28702;
         try {
-            int port = 28702;
             serverSocket = new ServerSocket(port);
             Socket socket;
             System.out.println("Venter på spillere på port " + port + "...");
@@ -21,7 +21,7 @@ public class Server {
                 new SpillerBehandler(socket).start();
             }
         } catch (Exception e) {
-            System.err.println("Ingen forbindelse ved port 52888");
+            System.err.println("Ingen forbindelse ved port " + port + "...");
             e.printStackTrace();
         }
     }

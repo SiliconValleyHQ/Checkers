@@ -1,11 +1,11 @@
-import Server.Server;
+import server.Server;
 
 import java.io.IOException;
 
 public class StartSpill {
 
     public static void main(String[] args) throws IOException {
-        new Server(args);
+        new Server();
     }
 
 }
