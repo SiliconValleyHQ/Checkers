@@ -1,2 +1,22 @@
 .idea/
 .DS_Store
+<<<<<<< HEAD
+=======
+
+.project
+
+*.iml
+
+checkers.iml
+
+*.iml
+
+.idea/workspace.xml
+
+.metadata/
+
+
+*.xml
+
+.idea/misc.xml
+>>>>>>> bror
